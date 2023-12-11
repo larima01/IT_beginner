@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner_IT</title>
+    <script>
+        let post1 = { 
+            content: 'This is my super post', 
+            likes: 300, 
+            shares: 20
+        }
+
+        let post2 = { 
+            content: 'This is my bit boring post', 
+            likes: 200, 
+            shares: 20
+        }
+        let facebookUser = {
+            userName: 'lukas',
+            password: 'aminoacid@1',
+            email: 'lukasaminu@gmail.com',
+            profileImage: 'reference-image',
+            friends: ['Olamide', 'faruq', 'taofeeq', 'abdulqudus'],  
+            posts: [post1, post2]
+        }
+
+
+        for (post of facebookUser.posts) {
+            // do something
+            post.reactions = post.likes;
+            delete post.likes;
+
+        }
+            console.log('We are done with loop');
+            console.log(facebookUser.posts);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
