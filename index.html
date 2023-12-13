@@ -23,12 +23,12 @@
             shares: 20
         }
         let facebookUserOne = {
-            userName: 'larima',
-            password: 'amino@1',
-            email: 'lukmon.aminu.msme@gmail.com',
-            profileImage: 'reference-image1',
+            userName: 'lukas',
+            password: 'aminoacid@1',
+            email: 'lukasaminu@gmail.com',
+            profileImage: 'reference_image1',
             friends: ['Olamide', 'faruq', 'taofeeq', 'abdulqudus'],  
-            posts: [post1, post2]
+            posts: [post1, post2],
         }
 
         let facebookUserTwo = {
@@ -39,20 +39,19 @@
             friends: ['Precious', 'Taiwo', 'Mahmud', 'Bolu'],  
             posts: [post3]
         }
-
-            let users = [facebookUserOne, facebookUserTwo];
-            for (user of users) 
-            {
-                user.interests = []; 
-                for (post of user.posts) 
-                {
-                    post.reactions = post.likes;
-                    delete post.likes;
-                } 
+        function replaceLikesWithReaction(user){
+            for (post of user.posts){
+                post.reactions = post.likes;
+                delete post.likes;
             }
 
-            console.log('We are done with users loop');
-            console.log(users);
+            console.log(user);
+        }
+        let users = [facebookUserOne, facebookUserTwo];
+        for (user of users){
+            user.interests = [];
+            replaceLikesWithReaction(user);
+        }
     </script>
 </head>
 <body>
