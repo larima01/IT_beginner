@@ -4,44 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beginner_IT</title>
+    <link rel="stylesheet" href="/css/style.css">
     <script src="js/myjs.js"></script>
 </head>
 <body>
-    <div>
-        <b>Logo</b>
-        <b>Name of website</b>
-        <button>log in </button>
+    <div id="header-wraper">
+        <header id="header">
+            <div id="logo-search-container">
+                <img id="logo" src="/image/logo.jpg" alt="">
+                <input type="text" placeholder="Search..."/>
+            </div>
+            <button>Log in </button>
+        </header>
     </div>
-    <div>
-       <div>
-            <h1>Article title</h1>
-            <h3>Short information on article</h3> 
-            <p><i>written by: Lukman</i></p>
-            <p><i>date: 16.12.2023</i></p>
-       </div>
-       <div>
-            <img height="500px" width="500px" src="/image/new.jpg" alt="new">
-            <p>paragraph 1</p>
-            <p>paragraph 2</p>
+    <div id="main-section-container">
+        <article id="article-section">
+            <img id="article-cover" src="/image/new.jpg" alt="new">
+            <div>
+                <h1>Article title</h1>
+                <h3>Short information on article</h3> 
+                <p class="article-info"><i>written by: Lukman</i></p>
+                <p class="article-info"><i>date: 16.12.2023</i></p>
+            </div>
+             <div>
+                
+                <p>paragraph 1</p>
+                <p>paragraph 2</p>
 
-            <h4>section header</h4>
-            <p>paragraph 1</p>
-            <ul>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-                <li>item 4</li>
-            </ul>
-       </div>
-    </div>
-    <div>
-        <h2>Side section</h2>   
-        <h3>Another article title</h3>
-        <h4>Another article short information</h4>
-        <a href="#">Click to see article</a>
-    </div>
+                <h4>section header</h4>
+                <p>paragraph 1</p>
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                    <li>item 4</li>
+                </ul>
+            </div>
+       </article>
+        <aside id="side-section">
+            <div>
+                <h2>Side section</h2>   
+                <h3>Another article title</h3>
+                <h4>Another article short information</h4>
+                <a href="#">Click to see article</a>
+            </div>
+            <div>
+                <h2>Also Side section</h2>   
+                <h3>article title</h3>
+                <h4>short description</h4>
+                <a href="#">Click to see article</a>
+            </div> 
+        </aside>    
 
-    
+    </div>
+    <footer>
+        <p>This is a footer</p>
+    </footer>
 
     
 
