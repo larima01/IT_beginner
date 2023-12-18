@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beginner_IT</title>
+    <meta name="description" content="tech article about devop">
+    <meta name="keywords" content="devops, learn devops, engineering">
+    <title>lucalm DevOps</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <script src="js/myjs.js"></script>
 </head>
 <body>
@@ -14,8 +17,20 @@
                 <img id="logo" src="/image/logo.jpg" alt="">
                 <input type="text" placeholder="Search..."/>
             </div>
-            <button>Log in </button>
+            <button onclick="handleCreatePost()">Create Post</button>
         </header>
+    </div>
+    <div id="post-form-container">
+        <form action="">
+            <label><b>Title</b></label>
+            <input type="text" placeholder="Enter title">
+            <label><b>Description</b></label>
+            <input type="text" placeholder="Enter description">
+            <label><b>Post</b></label>
+            <textarea placeholder="You post"></textarea>
+            <button id="hide-btn" onclick="hidePostForm()">Hide form</button>
+            <button id="save-btn">Save post</button>
+        </form>
     </div>
     <div id="main-section-container">
         <article id="article-section">
